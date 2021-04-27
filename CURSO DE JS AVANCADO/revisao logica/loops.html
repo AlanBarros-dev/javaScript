@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+</head>
+<body>
+    
+    <script>
+        let n1 = prompt(`Digite um a primeira variavel para o calculo: `)
+        let indice = 0 
+        while(indice < 11){
+             document.write(`${indice} X ${n1} = ${(indice * n1)} <br>`)
+             indice++
+        }
+       document.write(`saiu do loop while <br> <br>`)
+
+        for(let j = 0; j <= 10; j++){
+            if(j === 5){
+                continue
+            }
+            document.write(`${j} X ${n1} = ${(j * n1)} <br>`)
+        }
+        document.write(`saiu do loop for <br> <br>`)
+    </script>
+</body>
+</html>
