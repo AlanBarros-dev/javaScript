@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio if e else</title>
+</head>
+<body>
+    <h1>Corrida de Carros</h1>
+
+    <script>
+        const car1 = prompt('Qual o modelo do 1 carro ?')
+        const car2 = prompt('Qual o modelo do 2 carro ?')
+        
+        let Velcar1 = parseInt(prompt(`Qual a velocidade maxima do ${car1} ?`))
+
+        let Velcar2 = parseInt(prompt(`Qual a velocidade maxima do ${car2} ?`))
+
+        if(Velcar1 > Velcar2){
+            console.log(`${car1} e mais rapido chegando a ${Velcar1}KM/H`);
+        }else if(Velcar1 = Velcar2){
+            console.log(`${car1} e ${car2} tem a mesma velocidade de ${Velcar1}KM/H`);
+        }else if(Velcar2 > Velcar1){
+            console.log(`${car2} e mais rapido chegando a ${Velcar2}KM/H`);
+        }
+
+        
+        
+        
+    </script>
+</body>
+</html>
