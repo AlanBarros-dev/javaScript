@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de medidast</title>
+</head>
+<body>
+    <h1>Conversor</h1>
+    <script>
+        let valorMetros = parseFloat(prompt(`Digite a Medida em metros: `))
+
+        let unidade = prompt('Para qual unidade de medida quer converter ?' 
+        /n `1. Milimetros (mm)`
+        /n `2. centimetros (cm)`
+        /n `3. decimetros (dm)`
+        /n `1. decametros (dam)`
+        /n `1. hectometros (hm)`
+        /n `1. quilometros (km)`
+        )
+
+        switch(unidade){
+            case "1":
+                alert(`Resultado: ${valorMetros} m = ${valorMetros * 1000}`)
+
+        }
+    </script>
+</body>
+</html>
