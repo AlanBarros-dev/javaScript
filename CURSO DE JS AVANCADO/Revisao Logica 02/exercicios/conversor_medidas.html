@@ -12,19 +12,37 @@
         let valorMetros = parseFloat(prompt(`Digite a Medida em metros: `))
 
         let unidade = prompt('Para qual unidade de medida quer converter ?' 
-        /n `1. Milimetros (mm)`
-        /n `2. centimetros (cm)`
-        /n `3. decimetros (dm)`
-        /n `1. decametros (dam)`
-        /n `1. hectometros (hm)`
-        /n `1. quilometros (km)`
+         `1. Milimetros (mm)`
+         `2. centimetros (cm)`
+         `3. decimetros (dm)`
+         `4. decametros (dam)`
+         `5. hectometros (hm)`
+         `6. quilometros (km)`
         )
 
         switch(unidade){
             case "1":
-                alert(`Resultado: ${valorMetros} m = ${valorMetros * 1000}`)
+                alert(`Resultado: ${valorMetros}M = ${valorMetros * 1000} mm`)
+                break
+            case "2":
+                alert(`Resultado: ${valorMetros}M = ${valorMetros * 100}cm`)
+                break
+            case "3":
+                alert(`Resultado: ${valorMetros}M = ${valorMetros * 10}dm`)
+                break
+            case "4":
+                alert(`Resultado: ${valorMetros}M = ${valorMetros / 10}dam`)
+                break
+            case "5":
+                alert(`Resultado: ${valorMetros}M = ${valorMetros * 100}hm`)
+                break
+            case "6":
+                alert(`Resultado: ${valorMetros}M = ${valorMetros * 1000}km`)
+                break
+            
 
         }
+        alert(`Resultado ${valorMetros}`)
     </script>
 </body>
 </html>
