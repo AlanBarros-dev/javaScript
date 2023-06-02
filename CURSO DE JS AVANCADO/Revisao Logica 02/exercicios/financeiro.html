@@ -9,11 +9,34 @@
 <body>
     <h1>Fincanceiro</h1>
     <script>
-        let dinheiro = parseFloat(prompt("Qual Valor inicial em R$ ?"))
+        let saldo = parseFloat(prompt("Qual Valor inicial em R$ ?"))
 
-        let escolha = prompt(`Quantidade Inicial ${dinheiro} ` + `\n1. Adicionar` + `\n2. Sacar` + `\n3.Sair`)
+
+        let escolha = ""
 
         
+
+        do{
+            escolha = prompt(`valor ${saldo} ` + `\n1. Depositar` + `\n2. Sacar` + `\n3. Sair`)
+
+            switch(escolha){
+                case "1":
+                    saldo += parseFloat(prompt(`Quanto sera depositado ?`))
+                    break
+                case "2":
+                    saldo -= parseFloat(prompt(`Quanto sera sacado ?`))
+                    break
+                case "3":
+                    alert(`Finalizando...`)
+                    break
+            }            
+            
+
+
+
+        }while(escolha !== '3')
+
+
     </script>
 </body>
 </html>
