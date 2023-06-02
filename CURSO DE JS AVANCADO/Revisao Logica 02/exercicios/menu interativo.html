@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+</head>
+<body>
+    <script>
+        let escolha = 0
+        do{
+           
+            escolha = parseInt(prompt("Escolha uma das opcoes:" +
+            "\n1. Nome" +
+            "\n2. Idade" +
+            "\n3. Endereco" +
+            "\n4. Telefone" +
+            "\n5. Encerrar"))
+
+            switch (escolha){
+                case 1:
+                    alert(`Digite seu nome:`)
+                    break
+                case 2:
+                    prompt(`Digite sua idade: `)
+                    break
+                case 3:
+                    prompt('Digite seu Endereco: ')
+                    break
+                case 4:
+                    prompt('Digte seu telefone:')
+                    break
+                case 5:
+                    alert(`Encerrado`)
+                    break
+            }
+                
+        } while( escolha != 5)
+
+        
+    </script>
+
+</body>
+</html>
