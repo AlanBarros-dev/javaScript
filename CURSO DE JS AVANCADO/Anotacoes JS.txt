@@ -1,0 +1,13 @@
+
+* do while (quase a mesma coisa que o while mas ele vai executar 1 vez sempre mesmo que
+a condicao seja falsa como mostrado a baixo)
+
+// definindo variavel como 0 
+let velocidade = 0
+
+        do{
+            alert(`A velocidade do veiculo e: ${velocidade} km/h`)
+            velocidade -= 20
+        } while (velocidade > 0) // mesmo a condicao sendo falsa ele executa uma vez
+
+        alert(`Velocidade final: ${velocidade} km/h`)
