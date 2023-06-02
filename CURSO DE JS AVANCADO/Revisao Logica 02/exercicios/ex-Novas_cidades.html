@@ -7,6 +7,34 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>Exercicio cidades</h1>
+
+    <script>
+        const Nome = prompt('Digite seu nome: ')
+
+        let visitou = prompt("Voce ja visitou alguma cidade ?" +
+        "\n1. sim" +
+        "\n2. nao")
+
+        let cidades = ''
+        let contagem = 0
+
+        while(visitou == "1"){
+            let cidade = prompt("Qual a cidade ?")
+            cidades += "." + cidade + "\n" 
+            
+            contagem ++
+
+            visitou = prompt("Voce visitou mais alguma ?" +
+            "\n1. sim" +
+            "\n2. nao") 
+
+           
+        }
+
+        
+        alert(`${Nome} visitou ${contagem} cidades sendo elas: \n${cidades}`)
+
+    </script>
 </body>
 </html>
