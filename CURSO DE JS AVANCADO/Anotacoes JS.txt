@@ -11,3 +11,14 @@ let velocidade = 0
         } while (velocidade > 0) // mesmo a condicao sendo falsa ele executa uma vez
 
         alert(`Velocidade final: ${velocidade} km/h`)
+
+
+* for 
+diferente do while e do while
+
+o for precisa de 3 condicoes sendo elas : Inicializacao; condicao; Finalizacao ex:
+ criando uma variavel com 0 e repetindo ate 10
+
+for (let indice = 0; indice <= 10; indice++) {
+            alert(indice)
+        }
