@@ -16,7 +16,9 @@ let velocidade = 0
 * for 
 diferente do while e do while
 
-o for precisa de 3 condicoes sendo elas : Inicializacao; condicao; Finalizacao ex:
+o for precisa de 3 *condicoes sendo elas* : 
+- Inicializacao; condicao; Finalizacao ex:
+
  criando uma variavel com 0 e repetindo ate 10
 
 for (let indice = 0; indice <= 10; indice++) {
