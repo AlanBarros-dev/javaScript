@@ -9,12 +9,14 @@
 <body>
     <h1>Robo Tabuada</h1>
     <script>
-        let valor = 0
+
+        let valor = prompt('Digite o Numero quer precisa da Tabuada: ')
+        let resultado = ""
         
 
-        for(i = 0; i == 20; i++ ){
-            valor = parseFloat(prompt(`Digite o valor: `))
-            alert()
+        for(i = 0; i <= 20; i++ ){
+            resultado = (valor * i)
+            alert(`${valor} * ${i} = ${resultado}`)
         }
     </script>
 </body>
