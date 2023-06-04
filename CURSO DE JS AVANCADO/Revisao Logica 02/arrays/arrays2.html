@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 2 arrayst</title>
+</head>
+<body>
+    <h1>Arryas pt.2</h1>
+
+    <script>
+        const arr = ["Killzone", "Mortal Kombat", "RE4", "Def Jam Fight", "Silent Hill", "God Of War", "GTA", "Twisted Metal", "Rule of Rose"]
+        console.log(arr)
+
+        //adicionar elementos ao Array
+        //push: adiciona um elemento no final do array
+
+        arr.push("Siren")
+        arr.push("Naruto")
+        console.log(arr)
+
+        
+        //unshift: adiciona um elemento no comeco do array
+
+        arr.unshift("The Warriors")
+        console.log(arr)
+
+
+        //pop: remove elementos no final do array e o seleciona
+
+        const ultimoElemento = arr.pop()
+        console.log(arr)
+        console.log(ultimoElemento)
+
+
+        //shift: Remove elementos no comeco do array 
+
+        const primeiroElemento = arr.shift()
+        console.log(arr)
+        console.log(primeiroElemento)
+
+
+        //includes: verifica se o elemento existe no array e devolve como True ou False
+
+        const inclui = arr.includes("RE4")
+        console.log(inclui)
+
+
+        //indexOf: verifica qual o indice de um elemento do array
+
+        const indice = arr.indexOf("RE4")
+        console.log(indice)
+
+
+        //slice  copia uma parte do array e salva em um novo array
+
+        const jogosRockStar = arr.slice(7, 11)
+        console.log(arr)
+        console.log(jogosRockStar)
+    </script>
+</body>
+</html>

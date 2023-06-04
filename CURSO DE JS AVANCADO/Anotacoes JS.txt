@@ -24,3 +24,40 @@ o for precisa de 3 *condicoes sendo elas* :
 for (let indice = 0; indice <= 10; indice++) {
             alert(indice)
         }
+
+
+_________________________________________________________________
+
+- arrays
+
+const arr = ["Killzone", "Mortal Kombat", "RE4", "Def Jam Fight", "Silent Hill", "God Of War", "GTA", "Twisted Metal", "Rule of Rose"]
+
+*.push: adiciona um elemento no final do array.
+ex: arr.push("Siren")
+
+*.unshift: adiciona um elemento no comeco do array
+ex: arr.unshift("The Warriors") 
+
+*.pop(): remove elemento no final do array e o seleciona
+ex:
+const ultimoElemento = arr.pop()
+        console.log(ultimoElemento)
+
+*.shift: Remove o primeiro elemento do array e o seleciona 
+ex:
+const primeiroElemento = arr.shift()
+        console.log(primeiroElemento)
+
+*.includes: includes: verifica se o elemento existe no array e devolve como True ou False
+ex:
+const inclui = arr.includes("RE4")
+        console.log(inclui)
+
+*.indexOf: verifica qual o indice de um elemento do array
+ex:
+const indice = arr.indexOf("RE4")
+        console.log(indice)
+*.slice  copia uma parte do array e salva em um novo array
+ex:
+const jogosRockStar = arr.slice(7, 11)
+console.log(jogosRockStar)
