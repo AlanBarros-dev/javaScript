@@ -57,7 +57,13 @@ const inclui = arr.includes("RE4")
 ex:
 const indice = arr.indexOf("RE4")
         console.log(indice)
+
 *.slice  copia uma parte do array e salva em um novo array
 ex:
 const jogosRockStar = arr.slice(7, 11)
 console.log(jogosRockStar)
+
+*.concat(): junta arrays e ainda pode adicionar novos elementos.
+
+const sociedade = jogosRockStar.concat(outros, "crash")
+        console.log(sociedade)

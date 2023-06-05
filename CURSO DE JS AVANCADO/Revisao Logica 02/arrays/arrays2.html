@@ -56,8 +56,20 @@
         //slice  copia uma parte do array e salva em um novo array
 
         const jogosRockStar = arr.slice(7, 11)
+        const outros = arr.slice(0, 4)
         console.log(arr)
         console.log(jogosRockStar)
+
+
+        //concat: junta arrays e ainda pode adicionar novos elementos.
+        const sociedade = jogosRockStar.concat(outros, "crash")
+        console.log(sociedade)
+
+        //.splice: remove um grupo de elementos e substitui por outro.
+        
+        const elementosRemovidos = sociedade.splice(indice, 1, "RE5")
+        console.log(sociedade)
+        console.log(elementosRemovidos)
     </script>
 </body>
 </html>
