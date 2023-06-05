@@ -74,3 +74,11 @@ consultando oq tem dentro e as posicoes do array:
             const elemento = nomeArray[indice]
             console.log(`${elemento} se encontra na posicao ${indice}`)
         }
+
+            MATRIZ (ARRAY BIDIMENSIONAL)
+
+// adicionar no final da matriz
+        matriz.push(["Nova Linha"])
+
+// adicionar na linha especificada:
+        matriz[0].push("Nova coluna")
