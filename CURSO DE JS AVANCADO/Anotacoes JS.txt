@@ -67,3 +67,10 @@ console.log(jogosRockStar)
 
 const sociedade = jogosRockStar.concat(outros, "crash")
         console.log(sociedade)
+
+consultando oq tem dentro e as posicoes do array:
+//iterar sobre os Elementos:
+        for(let indice = 0; indice < nomeArray.length; indice++){
+            const elemento = nomeArray[indice]
+            console.log(`${elemento} se encontra na posicao ${indice}`)
+        }

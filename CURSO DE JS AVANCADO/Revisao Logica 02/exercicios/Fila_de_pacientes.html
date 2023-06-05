@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fila de pacientes</title>
+</head>
+<body>
+    <h1>atividade fila de pacientes</h1>
+
+    <script>
+        let fila = []
+
+        let NewPaciente = ""
+        let PacienteAtendido = ""
+        let interacao = ""
+
+        do{
+            
+            interacao = prompt(`Ola fila esta assim no momento: ${fila} \n1.Adicionar Paciente \n2.Atender Paciente \n3. Sair`)
+            
+            
+
+            switch(interacao){
+            case "1":
+                NewPaciente = prompt(`Qual o nome do paciente ?`)
+                fila.push(NewPaciente)
+                break
+            case "2":
+                PacienteAtendido = fila.shift()
+                alert(`Paciente atendido: ${PacienteAtendido}`)
+                break
+            case "3":
+                alert("Encerrando")
+                break
+            default:
+                alert("Opcao invalida!")
+        }
+
+        }while( interacao !=3)
+
+        alert(NewPaciente)
+        alert(fila)
+
+    
+
+        
+    </script>
+</body>
+</html>
