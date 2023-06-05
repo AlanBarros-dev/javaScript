@@ -82,3 +82,16 @@ consultando oq tem dentro e as posicoes do array:
 
 // adicionar na linha especificada:
         matriz[0].push("Nova coluna")
+
+ //iterando matriz
+
+        for(let i = 0; i < matriz.length; i++){
+            for(let j = 0; j < matriz[i].length; j++){
+                const elemento = matriz[i][j]
+                console.log("Posicao: ("+ i + "," + j + ") Valor :" + elemento)
+            }
+            
+            console.log(matriz[i])
+        }
+
+_________________________________________________________________________________________________________
