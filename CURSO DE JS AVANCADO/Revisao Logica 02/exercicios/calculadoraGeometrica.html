@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caulculadora Geometrica</title>
+</head>
+<body>
+    <h1>Geometric calculator</h1>
+
+    <script>
+
+        let option = ""
+
+
+        function areaTriangulo(base, altura){
+            const areaTri = (base * altura) / 2
+            return areaTri
+        }
+
+        function areaRetangulo(base, altura){
+            const areaRetan = base * altura
+            return areaRetan
+        }
+
+        function areaQuadrado(base){
+            const areaQuad = base * base
+            return areaQuad
+        }
+
+        function areaTrapezio(baseMaior, baseMenor, altura){
+            const areaTrap = (baseMaior + baseMenor) * altura / 2
+            return areaTrap
+        }
+
+        function areaCirculo(raio){
+            const areaCirc = 3.14 *(raio * raio)
+            return areaCirc
+        }
+
+
+        do{
+        option = prompt(`Escolha uma das opções: \n1. Calcular área do Triângulo \n2. Calcular área do Retangulo \n3. Calcular área do Quadrado \n4. Calcular área do Trapezio \n5. Calcular área do circulo \n6. Sair`)
+
+        switch(option){
+            case "1":
+                base = parseFloat(prompt('informe o valor da base: '))
+                altura = parseFloat(prompt('Informe o valor da altura: '))
+                alert(`area total do Triângulo é: ${areaTriangulo(base, altura)}`)
+                break
+            case "2":
+                base = parseFloat(prompt('Informe o valor da base: '))
+                altura = parseFloat(prompt('Informe o valor da altura: '))
+                alert(`area total do Retangulo é: ${areaRetangulo(base, altura)}`)
+                break
+            case "3":
+                base = parseFloat(prompt('informe o valor da base: '))
+                alert(`area total do Quadrado é: ${areaQuadrado(base)}`)
+                break
+            case "4":
+                baseMaior = parseFloat(prompt('Informe o valor da base maior: '))
+                baseMenor = parseFloat(prompt('Informe o valor da base menor: '))
+                altura = parseFloat(prompt('informe o valor da altura: '))
+                alert(`area total do Trapezio é: ${areaTrapezio(baseMaior, baseMenor, altura)}`)
+                break
+            case "5":
+                raio = parseFloat(prompt('Informe o valor do raio: '))
+                alert(`area total do circulo é: ${areaCirculo(raio)}`)
+                break
+            case "6":
+                alert('Encerrando...')
+                break
+            default:
+                alert('Opção incorreta')
+                
+        }
+
+        }while(option != 6)
+    </script>
+</body>
+</html>
