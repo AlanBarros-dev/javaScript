@@ -12,7 +12,78 @@
             alert(`O dobro de ${x} é: ${x * 2}`)
         }
 
-        dobro(5)
+        //dobro(5)
+
+
+        function soma(a, b, c, d, e, f){
+            alert(`O Resultado da soma é ${a + b + c + d + e + f}`)
+        }
+
+        //soma(3, 4, 4, 5, 6, 7)
+
+//Sempre coloque os parametros com valores padroes (tipo) ja definidos no final assim : 
+
+        function criarUsuario(nome, email, senha, tipo = "admin"){
+            const usuario ={
+                nome,
+                email,
+                senha,
+                tipo
+            }
+            console.log(usuario)
+        }
+
+        //criarUsuario("Alan", "Gmail.com", "*****")
+
+
+        //desse jeito sempre sera substituido por o valor que sera informado no local do parametro. nao faça dessa forma sempre da mesma forma de cima.
+       function novoUsuario(nome, tipo = "admin", email, senha){
+            const usuario ={
+                nome,
+                email,
+                senha,
+                tipo
+            }
+            console.log(usuario)
+        }
+
+        // novoUsuario("Alan", "gmail.com", "*****")
+
+
+
+
+
+        function muitosParametros(nome, telefone, endereco, date, email, senha){
+            //...
+        }
+        //muitosParametros("Nome", "Telefone", "Endereço", "data", "email", "senha")
+
+
+
+        // Melhor jeito de trabalhar com funções e criando a função e chama-la com um objeto respondendo cada parametro como foi feito abaixo
+
+        function objetoComParametros(usuario1){
+            usuario1.nome
+            usuario1.email
+            usuario1.telefone
+            usuario1.endereco
+            usuario1.date
+            usuario1.senha
+            console.log(usuario1)
+        }
+
+        const dadosDoUsuario1 = {
+        nome: "Alan",
+        telefone: "55555",
+        email: "gmai.com",
+        endereco: "casa33",
+        date: "12/09",
+        senha: "****"
+        }
+
+        objetoComParametros(dadosDoUsuario1)
+
+        
 
 
     </script>
