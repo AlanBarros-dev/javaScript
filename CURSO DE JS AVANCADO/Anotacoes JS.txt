@@ -28,7 +28,7 @@ for (let indice = 0; indice <= 10; indice++) {
 
 _________________________________________________________________
 
-- arrays
+                       - ARRAYS -
 
 const arr = ["Killzone", "Mortal Kombat", "RE4", "Def Jam Fight", "Silent Hill", "God Of War", "GTA", "Twisted Metal", "Rule of Rose"]
 
@@ -97,5 +97,47 @@ consultando oq tem dentro e as posicoes do array:
 _________________________________________________________________________________________________________
 
  * OBJETO *
+
+
+
+
+
+criando metodos dentro do objeto:
+
+1 crie um objeto:
+
+	let pessoa = {
+		nome: "Alex"
+		idade: 20
+	}
+
+2. crie uma funcao dentro do objeto mas sem a palavra function apenas nomendo-a e colocando as suas especificacoes
+ex:
+
+	let pessoa = {
+            nome: "Alan",
+            idade: 20,
+            dizerOla(){        
+                console.log("Ola mundo")
+            }
+        }
+
+3. Chamar a funcao, chame a funcao utilizando o objeto.nomeDaFuncao()
+ex:
+	pessoa.dizerOla()
+
+
+4. Uso do *THIS* dentro do objeto:
+
+para conseguir referenciar ou concatenar uma propriedade do proprio objeto dentro dele mesmo usamos o: this.propriedade
+ex: this.nome / this.idade / this.endereco.
+
+	let pessoa = {
+            nome: "Alan",
+            idade: 20,
+            dizerOla(){
+                console.log(`Ola Mundo meu nome e: ${this.nome}`)
+            }
+        } 
 
 
