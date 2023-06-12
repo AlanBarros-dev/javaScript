@@ -141,3 +141,27 @@ ex: this.nome / this.idade / this.endereco.
         } 
 
 
+
+
+____________________________________________________________________________________________________________________________________
+
+
+						* FUNCTION *
+
+
+
+- funcao recursiva:
+E aquela que se chama varias vezes dentro dela mesma exemplo:
+
+ function dividir(num){
+            console.log(num)
+            if(num % 2 === 0){
+                dividir(num / 2)
+            }else{
+                return num
+            }
+        }
+
+        dividir(40)
+
+ao usar funcao recursiva sempre defina quando ela vai parar pois se nao ela vira uma pilha infinita
