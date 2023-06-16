@@ -124,6 +124,57 @@ exemplo pratico:
   const nomes = personagens.map(function(personagem){
         return personagem.nome
        }) 
+
+
+  *3. filter: filtra elementos criando um array:
+
+exemplo pratico usando o mesmo array principal dos metodos já passados.
+
+	const orcs = personagens.filter(function(personagem){
+        return personagem.raca === "Orc"
+       })
+
+       console.log(orcs)
+
+
+
+  *4. .reduce
+
+//Reduce Pega um array e transforma em um novo valor, objeto, string qualquer coisa
+       
+exemplo pegando array principal e criando o nivel total de todos os personagens:
+
+       const nivelTotal = personagens.reduce(function (valorAcumulado, personagem){
+            return valorAcumulado + personagem.nivel       
+        }, 0)
+
+        console.log(nivelTotal)
+
+
+        const racas = personagens.reduce(function(valorAcumulado, personagem){
+            if (valorAcumulado[personagem.raca]){
+                valorAcumulado[personagem.raca].push(personagem)
+            }else{
+                valorAcumulado[personagem.raca] = [personagem]
+            }
+
+            return valorAcumulado
+        }, {})
+
+        console.log(racas)
+
+  *5. .sort
+
+//sort ordena arrays pega elementos do array e muda de posição de acordo com algum criterio (altera o array original).
+        exemplo: organizando a ordem do array por nivel de cada personagem 
+
+        personagens.sort(function(a, b){
+            return a.nivel - b.nivel
+        }
+        )
+
+        console.log(personagens)
+
  
 
 ______________________________________________________________________________________________________
