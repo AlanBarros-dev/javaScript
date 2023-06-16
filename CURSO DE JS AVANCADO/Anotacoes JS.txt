@@ -68,12 +68,48 @@ console.log(jogosRockStar)
 const sociedade = jogosRockStar.concat(outros, "crash")
         console.log(sociedade)
 
+
+*nomeLista.forEach(function) exibe cada elemento da função de acordo com cada elemento da lista.
+
+ex:
+
+
+criando a lista e usando o comando for each:
+
+		const lista = ["Maça", "Banana", "Laranja", "Uva"]
+        
+        	lista.push("Perá")
+
+usando o comando for each criando uma função anonima:
+
+lista.forEach(function(elemento, indice, array){
+            console.log(
+                elemento,
+                indice,
+                array
+            )
+        })
+
+resultado:
+
+	                       Maça 0 (5) ['Maça', 'Banana', 'Laranja', 'Uva', 'Perá']
+aula5HighOrderFunction.html:47 Banana 1 (5) ['Maça', 'Banana', 'Laranja', 'Uva', 'Perá']
+aula5HighOrderFunction.html:47 Laranja 2 (5) ['Maça', 'Banana', 'Laranja', 'Uva', 'Perá']
+aula5HighOrderFunction.html:47 Uva 3 (5) ['Maça', 'Banana', 'Laranja', 'Uva', 'Perá']
+aula5HighOrderFunction.html:47 Perá 4 (5) ['Maça', 'Banana', 'Laranja', 'Uva', 'Perá']
+
+--------------------------------------------------------------------------------
+
 consultando oq tem dentro e as posicoes do array:
 //iterar sobre os Elementos:
         for(let indice = 0; indice < nomeArray.length; indice++){
             const elemento = nomeArray[indice]
             console.log(`${elemento} se encontra na posicao ${indice}`)
         }
+
+
+
+
 
             MATRIZ (ARRAY BIDIMENSIONAL)
 
@@ -164,4 +200,20 @@ E aquela que se chama varias vezes dentro dela mesma exemplo:
 
         dividir(40)
 
-ao usar funcao recursiva sempre defina quando ela vai parar pois se nao ela vira uma pilha infinita
+ao usar funcao recursiva sempre defina quando ela vai parar pois se nao ela vira uma pilha infinita.
+
+
+- High order function:
+É a função que possui uma ou varias outras funções dentro de si propria a função mais externa vai sendo a de (high order) maior ordem
+exemplo:
+
+
+
+criando a funcao calcular passando 3 parametros:				function calcular(a, b, operacao){
+            									console.log("Realizando uma operação.")
+           									const resultado = operacao(a, b)
+utilizando o parametro operação e criando a função com menos ordem		return resultado
+       							 			}
+
+ 
+

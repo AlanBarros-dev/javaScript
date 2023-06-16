@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methodos de alta ordem de funções em arrays</title>
+</head>
+<body>
+    <script>
+        const personagens = [
+            {nivel: 42, nome: "Thrall", raca: "Orc", classe:"Xamã"},
+            {nivel: 28, nome: "Garrosh", raca: "Orc", classe:"Guerreiro"},
+            {nivel: 35, nome: "Varok", raca: "Orc", classe:"Guerreiro"},
+            {nivel: 35, nome: "Uther", raca: "Humano", classe:"Paladino"},
+            {nivel: 26, nome: "Jaina", raca: "Humano", classe:"Maga"},
+            {nivel: 39, nome: "Tyrande", raca: "Elfo Noturno", classe:"Sarcedotisa"},
+            {nivel: 29, nome: "Muradin", raca: "Anão", classe:"Guerreiro"}
+        ]
+
+        //Map
+
+        const nomes = []
+
+        for(let i = 0; i < personagens.length; i++){
+            nomes.push(personagens[i].nome)
+        }
+
+        console.log(nomes)
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High order Function</title>
+</head>
+<body>
+    <script>
+        function calcular(a, b, operacao){
+            console.log("Realizando uma operação.")
+            const resultado = operacao(a, b)
+            return resultado
+        }
+
+        function somar(x, y){
+            console.log('Realizando uma soma')
+            return x + y
+        }
+
+        console.log(calcular(3, 5, somar))
+
+
+
+        console.log(calcular(8, 4, function(x, y){
+            console.log("Realizando uma subtração.")
+            return x - y
+        }))
+
+        function exibirElemento(elemento, indice, array){
+            console.log({
+                elemento,
+                indice,
+                array
+            }
+            )
+        }
+
+        const lista = ["Maça", "Banana", "Laranja", "Uva"]
+        
+        lista.push("Perá")
+
+        lista.forEach(exibirElemento)
+
+        lista.forEach(function(elemento, indice, array){
+            console.log(
+                elemento,
+                indice,
+                array
+            )
+        })
+
+    </script>
+</body>
+</html>
