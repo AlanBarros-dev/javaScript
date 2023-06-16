@@ -69,7 +69,9 @@ const sociedade = jogosRockStar.concat(outros, "crash")
         console.log(sociedade)
 
 
-*nomeLista.forEach(function) exibe cada elemento da função de acordo com cada elemento da lista.
+                METODOS DE HIGH ORDER FUNCTION EM ARRAYS
+
+	*1. .forEach: nomeLista.forEach(function) exibe cada elemento da função de acordo com cada elemento da lista.
 
 ex:
 
@@ -97,9 +99,34 @@ aula5HighOrderFunction.html:47 Banana 1 (5) ['Maça', 'Banana', 'Laranja', 'Uva
 aula5HighOrderFunction.html:47 Laranja 2 (5) ['Maça', 'Banana', 'Laranja', 'Uva', 'Perá']
 aula5HighOrderFunction.html:47 Uva 3 (5) ['Maça', 'Banana', 'Laranja', 'Uva', 'Perá']
 aula5HighOrderFunction.html:47 Perá 4 (5) ['Maça', 'Banana', 'Laranja', 'Uva', 'Perá']
-
 --------------------------------------------------------------------------------
 
+     *2. .map: Cria um novo array baseado em um outro array 
+
+ sintaxe: const nomeNovoArray = nomeArrayPrincipal.map(function(atributo)
+	return atributo.atributoArrayPrincipal
+)   
+
+exemplo pratico:
+ 
+	array principal:
+ const personagens = [
+            {nivel: 42, nome: "Thrall", raca: "Orc", classe:"Xamã"},
+            {nivel: 28, nome: "Garrosh", raca: "Orc", classe:"Guerreiro"},
+            {nivel: 35, nome: "Varok", raca: "Orc", classe:"Guerreiro"},
+            {nivel: 35, nome: "Uther", raca: "Humano", classe:"Paladino"},
+            {nivel: 26, nome: "Jaina", raca: "Humano", classe:"Maga"},
+            {nivel: 39, nome: "Tyrande", raca: "Elfo Noturno", classe:"Sarcedotisa"},
+            {nivel: 29, nome: "Muradin", raca: "Anão", classe:"Guerreiro"}
+        ]
+
+       usando .map para criar um novo array com o nome de cada personagem
+  const nomes = personagens.map(function(personagem){
+        return personagem.nome
+       }) 
+ 
+
+______________________________________________________________________________________________________
 consultando oq tem dentro e as posicoes do array:
 //iterar sobre os Elementos:
         for(let indice = 0; indice < nomeArray.length; indice++){

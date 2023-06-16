@@ -20,13 +20,17 @@
 
         //Map
 
-        const nomes = []
+        //const nomes = []
 
-        for(let i = 0; i < personagens.length; i++){
-            nomes.push(personagens[i].nome)
-        }
+       // for(let i = 0; i < personagens.length; i++){
+        //    nomes.push(personagens[i].nome)
+        //}
 
-        console.log(nomes)
+       // console.log(nomes)
+
+       const nomes = personagens.map(function(personagem){
+        return personagem.nome
+       })
     </script>
 
 </body>
