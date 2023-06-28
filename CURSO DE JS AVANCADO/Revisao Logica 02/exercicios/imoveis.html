@@ -16,37 +16,38 @@
         do {
         option = prompt(`Bem vindo ao cadastro de imoveis \nTotal de imoveis: ${imoveis.length} \n\n Esolha uma das opções: \n1.Adicionar novo imovel \n2. Lista imoveis \n3. Sair `)
 
-        switch (option){
-            case "1":
-            const imovel = {}
+            switch (option){
+                case "1":
+                const imovel = {}
 
-            imovel.proprietario = prompt("Informe o nome do Proprietario: ")
-            imovel.quartos = prompt("Quantos quartos o imovel tem ?")
-            imovel.banheiros = prompt("Quantos banheiros o imovel possui ?")
-            imovel.garagem = prompt("Imovel possui garagem ? (sim/não)")
+                imovel.proprietario = prompt("Informe o nome do Proprietario: ")
+                imovel.quartos = prompt("Quantos quartos o imovel tem ?")
+                imovel.banheiros = prompt("Quantos banheiros o imovel possui ?")
+                imovel.garagem = prompt("Imovel possui garagem ? (sim/não)")
             
-            const confirm = confirm(
-                `Salvar este imovel ? \nProprietario: ${imovel.proprietario} \nQuartos: ${imovel.quartos}\nBanheiros: ${imovel.banheiros} \nGaragem:              ${imovel.garagem}`
-            )
-            if(confirm){
-                imoveis.push(imovel)
-            }
-            break
-            case "2":
-            for (let i = 0; i , imoveis.lenght; i++){
-                alert(
-                "imovel" + (i + 1) +
-                "\nProprietario: " + imoveis[i].proprietario +
-                "\n Quartos: " + imoveis[i].quartos +
-                "\n Banheiros: " + imoveis[i].banheiros +
-                "\n Garagem: " + imoveis[i].garagem)
-            }
-            break
-            case "3":
-                alert("Encerrando")
+                const confirm = confirm(
+                    `Salvar este imovel ? \nProprietario: ${imovel.proprietario} \nQuartos: ${imovel.quartos}\nBanheiros: ${imovel.banheiros} \nGaragem:              ${imovel.garagem}`
+                )
+                if(confirm){
+                    imoveis.push(imovel)
+                }
                 break
-            default:
-                alert("Opção Invalida")  
+                case "2":
+                for (let i = 0; i , imoveis.lenght; i++){
+                    alert(
+                    "imovel" + (i + 1) +
+                    "\nProprietario: " + imoveis[i].proprietario +
+                    "\n Quartos: " + imoveis[i].quartos +
+                    "\n Banheiros: " + imoveis[i].banheiros +
+                    "\n Garagem: " + imoveis[i].garagem)
+                }
+                break
+                case "3":
+                    alert("Encerrando")
+                    break
+                default:
+                    alert("Opção Invalida")  
+            }
         }while(option != 3)
 
 
