@@ -25,29 +25,30 @@
                 imovel.banheiros = prompt("Quantos banheiros o imovel possui ?")
                 imovel.garagem = prompt("Imovel possui garagem ? (sim/não)")
             
-                const confirm = confirm(
-                    `Salvar este imovel ? \nProprietario: ${imovel.proprietario} \nQuartos: ${imovel.quartos}\nBanheiros: ${imovel.banheiros} \nGaragem:              ${imovel.garagem}`
+                const confirmar = confirm(
+                    `Salvar este imovel ? \nProprietario: ${imovel.proprietario} \nQuartos: ${imovel.quartos}\nBanheiros: ${imovel.banheiros} \nGaragem: ${imovel.garagem}`
                 )
                 if(confirm){
                     imoveis.push(imovel)
                 }
                 break
                 case "2":
-                for (let i = 0; i , imoveis.lenght; i++){
+                for (let i = 0; i < imoveis.lenght; i++){
                     alert(
-                    "imovel" + (i + 1) +
-                    "\nProprietario: " + imoveis[i].proprietario +
-                    "\n Quartos: " + imoveis[i].quartos +
-                    "\n Banheiros: " + imoveis[i].banheiros +
-                    "\n Garagem: " + imoveis[i].garagem)
+                        "imovel" + (i + 1) +
+                        "\nProprietario: " + imoveis[i].proprietario +
+                        "\n Quartos: " + imoveis[i].quartos +
+                        "\n Banheiros: " + imoveis[i].banheiros +
+                        "\n Garagem: " + imoveis[i].garagem
+                    )
                 }
                 break
                 case "3":
                     alert("Encerrando")
                     break
                 default:
-                    alert("Opção Invalida")  
-            }
+                    alert("Opção Invalida") 
+            } 
         }while(option != 3)
 
 
