@@ -1,0 +1,20 @@
+Oque e o DOM - Document Object Model
+
+Modelo de objeto de documento
+
+
+obter elementos html do DOM
+
+Obter Varios elementos em uma HTMLCollection.
+ - document.getElementsByTagName()
+ - document.getElementsByClassName()
+
+
+Obter Varios Elementos em uma NodeList
+ - document.getElementsByName()
+ - document.querySelectorAll()
+
+
+Obtendo um Unico Elemento 
+ - document.getElementById()
+ - document.querySelector()
