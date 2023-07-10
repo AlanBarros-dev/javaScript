@@ -18,3 +18,19 @@ Obter Varios Elementos em uma NodeList
 Obtendo um Unico Elemento 
  - document.getElementById()
  - document.querySelector()
+
+
+-----------------------------------
+Aula 02
+
+1 criar elementos com o DOM
+
+ - document.createElement('Tag do parametro HTML a ser criado',)
+
+2 Adicionar conteudo ao elemento
+
+ - newElement.innerHTML = "Ola Mundo"
+
+3 Adicionar o Elemento como um novo no no DOM
+
+ - element.appendChild(newElement)
