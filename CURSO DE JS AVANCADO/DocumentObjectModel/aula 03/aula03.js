@@ -11,18 +11,44 @@ function addContact(){
     const nameInput = document.createElement('input')
     nameInput.type = 'text'
     nameInput.name = 'fullname'
+    nameInput.placeholder = 'Digite o Nome do contato'
     
     nameLi.appendChild(nameInput)
     ul.appendChild(nameLi)
+    ul.appendChild(document.createElement('br'))
 
     const phoneLi = document.createElement('li')
     phoneLi.innerText = "Telefone: "
     const phoneInput = document.createElement('input')
     phoneInput.type = 'phone'
     phoneInput.name = 'Contato'
+    phoneInput.placeholder = 'Digite o Numero'
     
     phoneLi.appendChild(phoneInput)
     ul.appendChild(phoneLi)
+    ul.appendChild(document.createElement('br'))
+
+    const addressLi = document.createElement('li')
+    addressLi.innerHTML = '<label for ="address">Endereco: </label>'
+    const addressInput = document.createElement('input')
+    addressInput.type = 'text'
+    addressInput.name = 'address'
+    addressInput.id = 'address'
+    addressInput.placeholder = 'Digite o Endereco'
+
+    addressLi.appendChild(addressInput)
+    ul.appendChild(addressLi)
+    ul.appendChild(document.createElement('br'))
     
     contactSection.append(h3, ul)
+}
+
+function removeContact() {
+    const contactSection = document.getElementById('contacts-list')
+
+    const titles = document.getElementsByTagName('h3')
+    const contacts = document.getElementsByTagName('ul')
+
+    contactSection.removeChild(titles[titles.lenght - 1])
+    contactSection.removeChild(contacts[contacts.lenght - 1])
 }

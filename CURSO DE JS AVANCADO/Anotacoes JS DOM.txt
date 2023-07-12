@@ -34,3 +34,9 @@ Aula 02
 3 Adicionar o Elemento como um novo no no DOM
 
  - element.appendChild(newElement)
+
+4 Adicionar varios elemetos a um no, usamos o comando .append(elementos que serao postos dentro de outro)
+
+
+ex:
+ - contactSection.append(h3, ul)
