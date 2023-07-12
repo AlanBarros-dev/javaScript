@@ -35,8 +35,15 @@ Aula 02
 
  - element.appendChild(newElement)
 
-4 Adicionar varios elemetos a um no, usamos o comando .append(elementos que serao postos dentro de outro)
-
+4 Adicionar varios elemetos a um no, usamos o comando .append(elementos que serao postos dentro de outro )
 
 ex:
  - contactSection.append(h3, ul)
+
+
+Aula 03
+
+1 Remover Elementos Filhos
+
+- ElementoPai.removeChild(Elementofilho)
+
